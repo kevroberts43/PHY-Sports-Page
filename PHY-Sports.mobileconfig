@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>FullScreen</key>
-			<false/>
+			<true/>
 			<key>Icon</key>
 			<data>
 			iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAIAAAAP3aGbAAEAAElE
@@ -2660,6 +2660,8 @@
 			nVxMx7/eP8o36etLeFYU/fb4/N3pyXenp78+PmlgWl/V+GsGXOTx
 			/DNJvz2bfX9xfvMyX2z8ssf/Hxx69gbIfiFrAAAAAElFTkSuQmCC
 			</data>
+			<key>IgnoreManifestScope</key>
+			<true/>
 			<key>IsRemovable</key>
 			<true/>
 			<key>Label</key>
@@ -2671,7 +2673,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>C6C5C41D-297F-4D2F-B9D5-9745EFC61E13</string>
+			<string>2F98A93B-28E6-4472-B16B-29F7841A5E8B</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>Precomposed</key>
@@ -2681,7 +2683,7 @@
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Adds a PHY Sports icon to your Home Screen that opens the PHY Sports Page.</string>
+	<string>Adds a PHY Sports icon to your Home Screen that opens the PHY Sports Page as a full-screen web app.</string>
 	<key>PayloadDisplayName</key>
 	<string>PHY Sports Page Icon</string>
 	<key>PayloadIdentifier</key>
@@ -2693,7 +2695,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>7E78415E-B6D0-4802-B403-3B5CB004945A</string>
+	<string>6E933260-533B-4745-AB3F-E98A387B0AFE</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
