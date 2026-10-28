@@ -2,6 +2,7 @@
 
 Home-screen icons for the PHY Sports Page app.
 
+- `icon/phy-icon-philly.png`: Philly skyline over the football field (current)
 - `icon/phy-icon-3sport.png`: three-sport icon (basketball, football, baseball)
 - `icon/phy-icon.png`: original football icon
-- `icon/icon.html`, `icon/icon2.html`: icon sources, rendered with `icon/shot.js` (Playwright)
+- `icon/icon.html`, `icon/icon2.html`, `icon/icon3.html`: icon sources, rendered with `icon/shot.js` (Playwright)
