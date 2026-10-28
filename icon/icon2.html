@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&family=Inter:wght@800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#000}
+.ic{width:1024px;height:1024px;position:relative;overflow:hidden;
+ background:radial-gradient(ellipse 70% 55% at 50% 0%,#1f4f63 0%,transparent 70%),linear-gradient(170deg,#12283b 0%,#0c1724 55%,#060b12 100%)}
+.beam{position:absolute;top:-120px;width:260px;height:900px;background:linear-gradient(180deg,rgba(255,255,255,.16),transparent 75%);filter:blur(8px)}
+.b1{left:40px;transform:rotate(-24deg)}.b2{right:40px;transform:rotate(24deg)}
+.floor{position:absolute;left:0;right:0;bottom:0;height:200px}
+.balls{position:absolute;left:0;right:0;top:100px;display:flex;justify-content:center;gap:34px}
+.balls svg{width:96px;height:96px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))}
+.mark{position:absolute;left:0;right:0;top:262px;text-align:center;font:italic 900 380px/1 'Barlow Condensed',sans-serif;color:#fff;letter-spacing:-6px;
+ text-shadow:0 10px 0 #c8102e,0 22px 40px rgba(0,0,0,.6)}
+.bar{position:absolute;left:180px;right:180px;top:678px;height:22px;background:#c8102e;transform:skewX(-14deg);border-radius:3px}
+.sub{position:absolute;left:0;right:0;top:722px;text-align:center;font:800 54px/1 Inter,sans-serif;letter-spacing:18px;color:#fff;padding-left:18px}
+</style></head><body><div class="ic">
+<div class="beam b1"></div><div class="beam b2"></div>
+<div class="balls">
+ <!-- basketball -->
+ <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#e8742a"/><g fill="none" stroke="#1a0d05" stroke-width="4"><circle cx="50" cy="50" r="46"/><path d="M4 50h92M50 4v92M17 18c18 16 18 48 0 64M83 18c-18 16-18 48 0 64"/></g></svg>
+ <!-- football -->
+ <svg viewBox="0 0 100 100"><g transform="rotate(-35 50 50)"><ellipse cx="50" cy="50" rx="47" ry="29" fill="#7a3b17" stroke="#2b1206" stroke-width="4"/><path d="M14 38q6 12 0 24M86 38q-6 12 0 24" stroke="#fff" stroke-width="5" fill="none"/><path d="M33 50h34" stroke="#fff" stroke-width="5"/><path d="M38 43v14M45 43v14M52 43v14M59 43v14" stroke="#fff" stroke-width="4"/></g></svg>
+ <!-- baseball -->
+ <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#f6f2ea" stroke="#9a948a" stroke-width="3"/><g fill="none" stroke="#c8102e" stroke-width="4"><path d="M22 14c14 20 14 52 0 72M78 14c-14 20-14 52 0 72"/></g><g stroke="#c8102e" stroke-width="3"><path d="M20 26l9-3M24 36l9-1M25 47h9M24 58l9 1M21 69l9 3M80 26l-9-3M76 36l-9-1M75 47h-9M76 58l-9 1M79 69l-9 3"/></g></svg>
+</div>
+<!-- three surfaces: hardwood | turf | diamond -->
+<svg class="floor" viewBox="0 0 1024 200" preserveAspectRatio="none">
+ <defs>
+  <linearGradient id="wood" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#b9793d"/><stop offset="1" stop-color="#8a5526"/></linearGradient>
+  <linearGradient id="turf" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0a6a74"/><stop offset="1" stop-color="#004148"/></linearGradient>
+  <linearGradient id="dirt" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#b8673a"/><stop offset="1" stop-color="#8c4a26"/></linearGradient>
+  <clipPath id="cL"><path d="M0 200V48L120 0h232L300 200z"/></clipPath>
+  <clipPath id="cM"><path d="M300 200L352 0h320l52 200z"/></clipPath>
+  <clipPath id="cR"><path d="M724 200L672 0h232l120 48v152z"/></clipPath>
+ </defs>
+ <!-- hardwood -->
+ <g clip-path="url(#cL)"><rect width="1024" height="200" fill="url(#wood)"/>
+  <g stroke="rgba(60,30,10,.35)" stroke-width="3"><path d="M0 30h400M0 62h400M0 96h400M0 132h400M0 170h400"/></g>
+  <g fill="none" stroke="#fff" stroke-width="7" opacity=".9"><path d="M60 200V40M60 40h-80"/><path d="M60 120a110 110 0 0 1 200 80"/></g>
+  <rect x="-10" y="40" width="70" height="160" fill="#c8102e" opacity=".55"/></g>
+ <!-- turf -->
+ <g clip-path="url(#cM)"><rect width="1024" height="200" fill="url(#turf)"/>
+  <g stroke="rgba(255,255,255,.55)" stroke-width="6"><path d="M392 0L370 200M456 0L448 200M512 0v200M568 0l8 200M632 0l22 200"/></g>
+  <g stroke="rgba(255,255,255,.4)" stroke-width="4"><path d="M424 60h8M424 140h8M484 60h8M484 140h8M540 60h8M540 140h8M600 60h8M600 140h8"/></g></g>
+ <!-- diamond -->
+ <g clip-path="url(#cR)"><rect width="1024" height="200" fill="#2f7a3a"/>
+  <path d="M700 200L860 40l180 160z" fill="url(#dirt)"/>
+  <path d="M760 200L860 100l100 100z" fill="#3a8a45"/>
+  <g fill="none" stroke="#fff" stroke-width="6"><path d="M700 200L860 40M860 40L1024 196"/></g>
+  <rect x="848" y="28" width="24" height="24" fill="#fff" transform="rotate(45 860 40)"/></g>
+ <!-- seams between surfaces -->
+ <g stroke="#060b12" stroke-width="10"><path d="M352 0L300 200M672 0l52 200"/></g>
+</svg>
+<div class="mark">PHY</div><div class="bar"></div><div class="sub">SPORTS</div>
+</div></body></html>
