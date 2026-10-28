@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&family=Inter:wght@800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#000}
+.ic{width:1024px;height:1024px;position:relative;overflow:hidden;
+ background:radial-gradient(ellipse 70% 50% at 50% 35%,#16324a 0%,transparent 70%),linear-gradient(180deg,#07101b 0%,#0c1724 60%,#0a2a31 85%,#0c1724 100%)}
+.beam{position:absolute;top:-140px;width:240px;height:1000px;background:linear-gradient(180deg,rgba(255,255,255,.13),transparent 70%);filter:blur(10px)}
+.b1{left:20px;transform:rotate(-22deg)}.b2{right:20px;transform:rotate(22deg)}
+.est{position:absolute;left:0;right:0;top:66px;display:flex;justify-content:center;align-items:center;gap:22px;font:800 36px/1 Inter,sans-serif;letter-spacing:14px;color:rgba(255,255,255,.6)}
+.est span{padding-left:14px}
+.ks{width:36px;height:36px;fill:#c8102e}
+.mark{position:absolute;left:0;right:0;top:104px;text-align:center;font:italic 900 400px/1 'Barlow Condensed',sans-serif;color:#fff;letter-spacing:-6px;
+ text-shadow:0 11px 0 #c8102e,0 24px 44px rgba(0,0,0,.7)}
+.logos img{position:absolute;opacity:.16;filter:saturate(.55) blur(.5px)}
+.l-eag{left:-70px;top:60px;width:560px;transform:rotate(-8deg)}
+.l-phi{right:-30px;top:50px;width:520px;transform:rotate(7deg)}
+.l-six{left:212px;top:440px;width:600px;opacity:.13!important}
+.x{position:absolute;left:0;top:594px;width:1024px;height:330px}
+.field{position:absolute;left:-10%;right:-10%;bottom:0;height:330px;transform:perspective(520px) rotateX(55deg);transform-origin:bottom;
+ background:repeating-linear-gradient(90deg,transparent 0 118px,rgba(255,255,255,.16) 118px 124px),linear-gradient(0deg,#00515a,#00343a)}
+.banner{position:absolute;left:150px;right:150px;top:516px;height:70px;background:#c8102e;transform:skewX(-14deg);border-radius:4px;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.5)}
+.banner b{transform:skewX(14deg);font:800 44px/1 Inter,sans-serif;letter-spacing:16px;color:#fff;padding-left:16px}
+</style></head><body><div class="ic">
+<div class="logos"><img class="l-eag" src="logos/eagles.png"><img class="l-phi" src="logos/phillies.png"><img class="l-six" src="logos/sixers-ball.svg"></div>
+<div class="beam b1"></div><div class="beam b2"></div>
+<svg style="display:none"><symbol id="keystone" viewBox="0 0 30 30"><path d="M3 2h24l-3 7 3 0-4 19H7L3 9h3z"/></symbol></svg>
+<div class="est"><svg class="ks"><use href="#keystone"/></svg><span>EST. 2011</span><svg class="ks"><use href="#keystone"/></svg></div>
+<div class="mark">PHY</div>
+<div class="field"></div>
+<div class="banner"><b>SPORTS PAGE</b></div>
+</div>
+</body></html>
